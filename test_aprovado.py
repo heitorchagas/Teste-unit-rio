@@ -7,7 +7,7 @@ def test2():
     assert aprovado(7, 80, 80) == 'Reprovado por faltas'
 
 def test3():
-    assert aprovado(5, 80, 20) == 'Precisa fazer prova final'
+    assert aprovado(6, 80, 20) == 'Aprovado'
 
 def test4():
     assert aprovado(6, 80, 21) == 'Reprovado por faltas'
@@ -16,10 +16,10 @@ def test5():
     assert aprovado(5.9, 80, 20) == 'Precisa fazer prova final'
 
 def test6():
-    assert aprovado(5.9, 80, 21) == 'Reprovado por faltas'
+    assert aprovado(5.9, 80, 19) == 'Reprovado por faltas'
 
 def test7():
-    assert aprovado(6.1, 80, 20) == 'Aprovado'
+    assert aprovado(6.1, 80, 21) == 'Reprovado por faltas'
 
 def test8():
-    assert aprovado(6.1, 80, 21) == 'Reprovado'
+    assert aprovado(6.1, 80, 19) == 'Reprovado'
