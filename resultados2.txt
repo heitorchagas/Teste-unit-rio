@@ -1,0 +1,69 @@
+test_aprovado.py::test1 PASSED                                                                                                                                       [ 12%]
+test_aprovado.py::test2 FAILED                                                                                                                                       [ 25%]
+test_aprovado.py::test3 FAILED                                                                                                                                       [ 37%]
+test_aprovado.py::test4 FAILED                                                                                                                                       [ 50%]
+test_aprovado.py::test5 FAILED                                                                                                                                       [ 62%]
+test_aprovado.py::test6 PASSED                                                                                                                                       [ 75%]
+test_aprovado.py::test7 PASSED                                                                                                                                       [ 87%]
+test_aprovado.py::test8 FAILED                                                                                                                                       [100%]
+
+================================================================================= FAILURES =================================================================================
+__________________________________________________________________________________ test2 ___________________________________________________________________________________
+
+    def test2():
+>       assert aprovado(7, 80, 80) == 'Reprovado por faltas'
+E       AssertionError: assert 'Aprovado' == 'Reprovado por faltas'
+E         
+E         - Reprovado por faltas
+E         + Aprovado
+
+test_aprovado.py:7: AssertionError
+__________________________________________________________________________________ test3 ___________________________________________________________________________________
+
+    def test3():
+>       assert aprovado(5, 80, 20) == 'Precisa fazer prova final'
+E       AssertionError: assert 'Reprovado por faltas' == 'Precisa fazer prova final'
+E         
+E         - Precisa fazer prova final
+E         + Reprovado por faltas
+
+test_aprovado.py:10: AssertionError
+__________________________________________________________________________________ test4 ___________________________________________________________________________________
+
+    def test4():
+>       assert aprovado(6, 80, 21) == 'Reprovado por faltas'
+E       AssertionError: assert 'Aprovado' == 'Reprovado por faltas'
+E         
+E         - Reprovado por faltas
+E         + Aprovado
+
+test_aprovado.py:13: AssertionError
+__________________________________________________________________________________ test5 ___________________________________________________________________________________
+
+    def test5():
+>       assert aprovado(5.9, 80, 20) == 'Precisa fazer prova final'
+E       AssertionError: assert 'Reprovado por faltas' == 'Precisa fazer prova final'
+E         
+E         - Precisa fazer prova final
+E         + Reprovado por faltas
+
+test_aprovado.py:16: AssertionError
+__________________________________________________________________________________ test8 ___________________________________________________________________________________
+
+    def test8():
+>       assert aprovado(6.1, 80, 21) == 'Reprovado'
+E       AssertionError: assert 'Aprovado' == 'Reprovado'
+E         
+E         - Reprovado
+E         ? ^^
+E         + Aprovado
+E         ? ^
+
+test_aprovado.py:25: AssertionError
+========================================================================= short test summary info ==========================================================================
+FAILED test_aprovado.py::test2 - AssertionError: assert 'Aprovado' == 'Reprovado por faltas'
+FAILED test_aprovado.py::test3 - AssertionError: assert 'Reprovado por faltas' == 'Precisa fazer prova final'
+FAILED test_aprovado.py::test4 - AssertionError: assert 'Aprovado' == 'Reprovado por faltas'
+FAILED test_aprovado.py::test5 - AssertionError: assert 'Reprovado por faltas' == 'Precisa fazer prova final'
+FAILED test_aprovado.py::test8 - AssertionError: assert 'Aprovado' == 'Reprovado'
+======================================================================= 5 failed, 3 passed in 0.12s =====================================================================

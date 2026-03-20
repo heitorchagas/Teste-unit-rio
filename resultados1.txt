@@ -1,0 +1,56 @@
+test_aprovado.py::test1 PASSED                                                                                                                                       [ 12%]
+test_aprovado.py::test2 PASSED                                                                                                                                       [ 25%]
+test_aprovado.py::test3 FAILED                                                                                                                                       [ 37%]
+test_aprovado.py::test4 PASSED                                                                                                                                       [ 50%]
+test_aprovado.py::test5 FAILED                                                                                                                                       [ 62%]
+test_aprovado.py::test6 PASSED                                                                                                                                       [ 75%]
+test_aprovado.py::test7 FAILED                                                                                                                                       [ 87%]
+test_aprovado.py::test8 FAILED                                                                                                                                       [100%]
+
+================================================================================= FAILURES =================================================================================
+__________________________________________________________________________________ test3 ___________________________________________________________________________________
+
+    def test3():
+>       assert aprovado(5, 80, 20) == 'Precisa fazer prova final'
+E       AssertionError: assert 'Reprovado por faltas' == 'Precisa fazer prova final'
+E         
+E         - Precisa fazer prova final
+E         + Reprovado por faltas
+
+test_aprovado.py:10: AssertionError
+__________________________________________________________________________________ test5 ___________________________________________________________________________________
+
+    def test5():
+>       assert aprovado(5.9, 80, 20) == 'Precisa fazer prova final'
+E       AssertionError: assert 'Reprovado por faltas' == 'Precisa fazer prova final'
+E         
+E         - Precisa fazer prova final
+E         + Reprovado por faltas
+
+test_aprovado.py:16: AssertionError
+__________________________________________________________________________________ test7 ___________________________________________________________________________________
+
+    def test7():
+>       assert aprovado(6.1, 80, 20) == 'Aprovado'
+E       AssertionError: assert 'Reprovado por faltas' == 'Aprovado'
+E         
+E         - Aprovado
+E         + Reprovado por faltas
+
+test_aprovado.py:22: AssertionError
+__________________________________________________________________________________ test8 ___________________________________________________________________________________
+
+    def test8():
+>       assert aprovado(6.1, 80, 21) == 'Reprovado'
+E       AssertionError: assert 'Reprovado por faltas' == 'Reprovado'
+E         
+E         - Reprovado
+E         + Reprovado por faltas
+
+test_aprovado.py:25: AssertionError
+========================================================================= short test summary info ==========================================================================
+FAILED test_aprovado.py::test3 - AssertionError: assert 'Reprovado por faltas' == 'Precisa fazer prova final'
+FAILED test_aprovado.py::test5 - AssertionError: assert 'Reprovado por faltas' == 'Precisa fazer prova final'
+FAILED test_aprovado.py::test7 - AssertionError: assert 'Reprovado por faltas' == 'Aprovado'
+FAILED test_aprovado.py::test8 - AssertionError: assert 'Reprovado por faltas' == 'Reprovado'
+======================================================================= 4 failed, 4 passed in 0.12s ========================================================================
